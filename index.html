@@ -1,0 +1,179 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+   <div id="header"> 0 
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Frontend developer</p>
+            <h1>Hi, I'm <span>subash</span><br>From Govt Arts  <br>Coimbatore </h1>
+        </div>
+    </div>
+</div>
+<!-----------about----------------->
+<div id="about" id="subash">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpg" class="img-about">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titles">About Me</h1>
+                                <br>
+                                <p>Hi, I'm Subash, a passionate tech enthusiast currently pursuing a B.Sc. in Information technology. I specialize in web development with HTML, CSS, and have a strong foundation in Java and Python (OOP). I love building dynamic and efficient solutions, continuously learning, and exploring new technologies. Welcome to my portfolio—let's create something amazing together!</p>
+<BR>
+                <div class="tab-titles">
+                    <BR>
+                    <p class="tab-links active-link"onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links "onclick="opentab('Education')">Education</p>
+                                  </div>
+               <div class="col-six tab-full">
+                <br>
+                    
+                <div class="tab-contents active-tab" id="Skills">
+                <h3>Skills</h3>
+                <p>
+                  I have expertise in HTML, CSS for web development and a strong
+                  foundation in Java and Python  for building dynamic and
+                  efficient applications. Passionate about problem-solving and
+                  creating innovative digital solutions.
+                </p>
+                <ul>
+                  <li>
+                    <div class="progress percent70"><span>PYTHON</span></div>
+                    <strong>90%</strong>
+                  </li>
+                    <li>
+                      <div class="progress percent90"><span>HTML</span></div>
+                      <strong>80%</strong>
+                    </li>
+                    <li>
+                      <div class="progress percent85"><span>CSS</span></div>
+                      <strong>75%</strong>
+                    </li>
+                    
+                    <li>
+                      <div class="progress percent80"><span>JAVA</span></div>
+                      <strong>70%</strong>
+                    </li>
+                    <li>
+                      <div class="progress percent60"><span>VB.NET</span></div>
+                      <strong>65%</strong>
+                    </li>
+                  </ul>
+               </div>
+                <div class="tab-contents" id="Education">
+                  <ul>
+                    <li>
+                      <span>10th</span><br><strong>Mani hr sec school, Coimbatore</strong>
+                    </li>
+                    <li>
+                      <span>12th</span><br><strong>Mani hr sec school, Coimbatore</strong>
+                    </li>
+                    <li>
+                      <span>UG</span><br><strong>currently pursuing a B.Sc. in Information technology in Govt Arts College, Coimbatore</strong>
+                    </li>
+              
+                  </ul>
+            </div>
+        </div>
+    </div>  
+</div>
+</div>
+</div>
+<!-----------protfolio----------------->
+<div id="protfolio">
+    <div class="container">
+      <h1 class="sub-titles">My work</h1>
+       <div class="work-list">
+        <div class="work">
+          <img src="images/work.jpg">
+          <div class="layer">
+            <h3><b>Project</b> </h3>
+            <p><b>Protfolio Design</p>
+            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        
+        </div>
+        <div>
+          <h2></h2>
+        </div>
+      
+        <a href="#"class="btn">see more</a>
+
+       </div>
+
+    </div>
+</div>
+<!-----------contact----------------->
+<div id="contact-icons">
+  <div class="container">
+    <h1 class="sub-title">Connect with Me</h1>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/subash" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/subash" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://twitter.com/subash" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/subash" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+ <div id="contact"> 
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>subash22012006@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>8667563765</p>
+        <div class="soical-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+
+        </div>
+
+
+      </div>
+      <div class="contact-right">
+        
+        <p>Have a question or want to work together?</p>
+        <form>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email"required>
+          <textarea name="message" placeholder="your Message" rows="6" ></textarea>
+          <button type="submit" value="Send">submit</button>
+        </form>
+  </div>
+</div>
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tabLinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabContents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); 
+    }
+
+</script> 
+</body>
+</html>
